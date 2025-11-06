@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style> 
+    #newspaper {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Times New Roman', serif;
+        padding: 20px 0;
+        border-bottom: 3px solid #000;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+    }
+    fieldset {
+        max-width: 1200px;
+        margin: 40px;
+        padding: 30px;
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: lightgreen;
+    }
+
+    legend {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 0 15px;
+        background-color: lightgreen;
+        border-radius: 15px;
+        border: 2px solid;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    #name, #mail, #number, #reason  {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 15px;
+        border: 1px solid lightgreen;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    #submit{
+        background-color: darkcyan;
+        padding: 14px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    #submit:hover{
+        background-color:cyan;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px black;
+    }
+    #rights{
+        text-align: center;
+        font-size: 20px;
+        max-width: 1200px;
+    }
+    footer {
+        max-width: 1200px;
+        margin: 40px 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid;
+    }
+    footer a {
+        text-decoration: none;
+        font-weight: 600;
+        padding: 8px 15px;
+        background-color: greenyellow;
+        border-radius: 5px;
+    }
+    footer a:hover {
+        background-color: skyblue;
+        box-shadow: 1px 1px 5px black;
+    }
+    </style>
+</head>
+<body>
+     <div id="newspaper">The raising times</div>
+    <fieldset>
+        <legend>Contact Us</legend>
+        <form action="login" id="contact">
+            <label for="name">Your Full Name:</label>
+            <input type="text" placeholder="Ex. Mahabir Pun Magar" id="name"><br><br>
+            <label for="mail">Your Email:</label>
+            <input type="email" placeholder="Ex. mahabir123@gmail.com" id="mail"><br><br>
+            <label for="number">Your Contact Number:</label>
+            <input type="number" id="number" placeholder="Ex. 9845520000"> <br><br>
+            <label for="reason">Reason For Contact:</label>
+            <textarea name="reason" id="reason" cols="30" rows="15"></textarea><br><br>
+
+            <input type="submit" value="Send" id="submit" onclick="alert('Thanks for Conatcting Us !')">
+        </form>
+    </fieldset>
+    <div id="rights">This website is developed by Prakash Bahaduer Nepali and all the &copy; copyrights is reserved.</div>
+<footer>
+    <div><a href="website.html" target="_blank">Home Page</a></div>
+    <div>Page 5</div>
+    <div>risingtimes.com</div>
+</footer>
+</body>
+</html>

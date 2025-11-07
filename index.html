@@ -2,142 +2,188 @@
 <html>
 <head>
     <title>The Rising Times</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Georgia', serif;
-            padding: 40px 20px;
-        }
-        .header {
-            max-width: 1200px;
-            margin: 0 auto 25px;
-            text-align: center;
-            border-bottom: 3px solid #000;
-            padding-bottom: 20px;
-        }
-        .date {
-            font-size: 15px;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #000;
-        }
-        .title {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-        .tagline {
-            font-size: 13px;
-            font-style: italic;
-        }
-        header {
-            background-color: #03045e;
-            padding: 25px;
-            border-radius: 10px;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        nav a {
-            display: inline-block;
-            text-decoration: none;
-            color: black;
-            background: lightgreen;
-            padding: 12px 20px;
-            border-radius: 5px;
-            margin: 10px;
-            font-weight: 600;
-        }
-        nav a:hover {
-            background: yellow;
-            box-shadow: 0 4px 8px black;
-        }
-        #highlights {
-        max-width: 1200px;
-        margin: 30px auto;
-        padding: 20px;
-        
-        }
-        #highlight-title {
-            font-size: 32px;
-            color: #03045e;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #b8fb3c;
-        }
-        #article{
-            box-shadow: 2px 2px 10px black;
-            border-radius: 30px;
-            padding: 40px;
-            margin: 10px;
-            background: white;
-        }
+   <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        #highlights h2 {
-            font-size: 24px;
-            color: #333;
-            margin: 25px;
-            text-decoration: underline;
-        }
+body {
+    font-family: 'Times New Roman', Georgia, serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
 
-        #highlights img {
-            width: 300px;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 30px;
-        }
+.header {
+    background: #1a1a1a;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid #d32f2f;
+}
 
-        #highlights h3 {
-            font-size: 20px;
-            color: #03045e;
-            margin-bottom: 10px;
-        }
+.date {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #cccccc;
+    border: none;
+    text-transform: uppercase;
+}
 
-        #highlights p {
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
 
-        #highlights a {
-            color:blue;
-            text-decoration: none;
-            font-weight: 600;
-        }
+.tagline {
+    font-size: 14px;
+    font-style: italic;
+    color: #e0e0e0;
+    letter-spacing: 1px;
+}
 
-        #highlights a:hover {
-            text-decoration: underline;
-            color:red;
+header {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 0;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
 
-        }
-     footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px ; 
-        max-width: 1200px; 
-        margin: 0 auto;
-        width: 100%;
-        border-top: 2px solid;
-        }
-        footer div {
-            font-size: 16px;
-        }
-        footer a {
-            text-decoration: none;
-            font-weight: 600;
-            padding: 8px 15px;
-            background-color: greenyellow;
-            border-radius: 5px;
-        }
-        footer a:hover {
-            background-color: skyblue;
-            box-shadow: 1px 1px 5px black;
-        }
-    </style>
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #2c3e50;
+    padding: 12px 25px;
+    border-radius: 0;
+    margin: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background: #d32f2f;
+    box-shadow: none;
+}
+
+#highlights {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background: white;
+}
+
+#highlight-title {
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #d32f2f;
+    text-align: center;
+}
+
+#article {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    border-left: 5px solid #2c3e50;
+}
+
+#highlights h2 {
+    font-size: 18px;
+    color: #d32f2f;
+    margin: 35px 0 15px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #f8f8f8;
+    padding: 10px;
+    border-left: 4px solid #d32f2f;
+}
+
+#highlights img {
+    width: 300px;
+    height: 200px;
+    border-radius: 0;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+
+#highlights h3 {
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+#highlights p {
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 15px;
+    text-align: justify;
+}
+
+#highlights a {
+    color: #2c3e50;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#highlights a:hover {
+    text-decoration: none;
+    color: #d32f2f;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    width: 100%;
+    border-top: 3px solid #1a1a1a;
+    background: #f5f5f5;
+}
+
+footer div {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #d32f2f;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+footer a:hover {
+    background: #2c3e50;
+    box-shadow: none;
+}
+   </style>
 </head>
 <body>
     <div class="header">
